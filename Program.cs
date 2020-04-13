@@ -9,6 +9,11 @@ namespace studentlist1
         static void Main(string[] args)
         {
             /* Check arguments */
+            if (args == null || args.Length != 1)
+            {
+                Console.WriteLine("Usage: dotnet dev275x.rollcall.dll (a | r | c | +WORD | WORD?)");
+                return; //Exit Early.
+            }
             if (args[0] == "a") 
             {
                 Console.WriteLine("Loading data ...");
