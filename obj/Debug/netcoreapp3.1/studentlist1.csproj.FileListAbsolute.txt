@@ -1,0 +1,13 @@
+C:\Users\jewry\local-repo\studentlist1\bin\Debug\netcoreapp3.1\studentlist1.exe
+C:\Users\jewry\local-repo\studentlist1\bin\Debug\netcoreapp3.1\studentlist1.deps.json
+C:\Users\jewry\local-repo\studentlist1\bin\Debug\netcoreapp3.1\studentlist1.runtimeconfig.json
+C:\Users\jewry\local-repo\studentlist1\bin\Debug\netcoreapp3.1\studentlist1.runtimeconfig.dev.json
+C:\Users\jewry\local-repo\studentlist1\bin\Debug\netcoreapp3.1\studentlist1.dll
+C:\Users\jewry\local-repo\studentlist1\bin\Debug\netcoreapp3.1\studentlist1.pdb
+C:\Users\jewry\local-repo\studentlist1\obj\Debug\netcoreapp3.1\studentlist1.csprojAssemblyReference.cache
+C:\Users\jewry\local-repo\studentlist1\obj\Debug\netcoreapp3.1\studentlist1.csproj.CoreCompileInputs.cache
+C:\Users\jewry\local-repo\studentlist1\obj\Debug\netcoreapp3.1\studentlist1.AssemblyInfoInputs.cache
+C:\Users\jewry\local-repo\studentlist1\obj\Debug\netcoreapp3.1\studentlist1.AssemblyInfo.cs
+C:\Users\jewry\local-repo\studentlist1\obj\Debug\netcoreapp3.1\studentlist1.dll
+C:\Users\jewry\local-repo\studentlist1\obj\Debug\netcoreapp3.1\studentlist1.pdb
+C:\Users\jewry\local-repo\studentlist1\obj\Debug\netcoreapp3.1\studentlist1.genruntimeconfig.cache
