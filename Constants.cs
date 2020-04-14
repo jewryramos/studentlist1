@@ -12,7 +12,7 @@ namespace studentlist1
         internal const string ShowRandom = "-r";
 
         //Command line argument to display a count of the number of students in the list.
-        internal const string  ShowCount = "-c";
+        internal const string  ShowCount = "-count";
 
         //Command line argument to find a student in the list.
         internal const string FindEntry = "?";
