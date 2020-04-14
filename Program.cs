@@ -46,13 +46,23 @@ namespace studentlist1
             else if (args[0].Contains(Constants.FindEntry))
             {
                 var words = fileContents.Split(Constants.StudentEntryDelimiter);
-                bool done = false;
                 var argValue = args[0].Substring(1);
-                for (int idx = 0; idx < words.Length && !done; idx++)
+                var indexLocation = -1;
+                for (int idx = 0; idx < words.Length; idx++)
                 {
                     if (words[idx] == argValue)
-                        Console.WriteLine("We found it!");
-                        done = true;
+                    {
+                        indexLocation = idx;
+                        break;
+                    }
+                }
+                if (indexLocation>= 0)
+                {
+                    Console.WriteLine($"Entry '{argValue}' found at index {indexLocation}");
+                }
+                else
+                {
+                    Console.WriteLine($"Entry '{argValue}' does not exist.");
                 }
             }
             else if (args[0].Contains(Constants.ShowCount))
@@ -83,7 +93,6 @@ namespace studentlist1
         //Read data from the given file
         static string LoadData(string fileName)
         {
-            string line;
 
             //The 'using' construct does the heavy lifting of flushing a stream
             //amd releasing system resources the stream was using.
@@ -94,16 +103,14 @@ namespace studentlist1
                 //The first line is a coma-separated list of students
                 //The second line is a timestamp.
                 //Let us just retrieve the first line, which is a student name
-                line = reader.ReadLine();
+                return reader.ReadLine();
             }   
-            return line;
         }
         //Writes the given string of data to the file with the given filename.
         //This method also adds a timestamp to the end of the file.
         static void UpdateContent(string content, string fileName)
         {
-            var now = DateTime.Now;
-            var timestamp = String.Format("List last updated on {0}",now);
+            var timestamp = String.Format("List last updated on {0}",DateTime.Now);
 
             //The 'using' construct does the heavy lifting of flushing a stream
             //amd releasing system resources the stream was using.
