@@ -11,7 +11,7 @@ namespace studentlist1
             /* Check arguments */
             if (args == null || args.Length != 1)
             {
-                Console.WriteLine("Usage: dotnet dev275x.rollcall.dll (a | r | c | +WORD | WORD?)");
+                ShowUsage();
                 return; //Exit Early.
             }
 
@@ -70,6 +70,10 @@ namespace studentlist1
                 var words = fileContents.Split(Constants.StudentEntryDelimiter);
                 Console.WriteLine(String.Format(" {0} words found", words.Length));
             }
+            else
+            {
+                ShowUsage();
+            }
             
         }
 
@@ -103,6 +107,10 @@ namespace studentlist1
                 writer.WriteLine(content);
                 writer.WriteLine(timestamp);
             }
+        }
+        static void ShowUsage()
+        {
+             Console.WriteLine("Usage: dotnet dev275x.rollcall.dll (a | r | c | +WORD | WORD?)");
         }
     }
 }
